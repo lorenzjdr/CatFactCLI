@@ -22,6 +22,10 @@ func rgb(i int) (int, int, int) {
         int(math.Sin(f*float64(i)+4*math.Pi/3)*127 + 128)
 }
 
+const (
+   BACKGROUND_COLOR = "\033[48;5;0m" 
+)
+
 func main(){
 
 	url := "https://catfact.ninja/fact"
@@ -41,6 +45,7 @@ func main(){
 
    for j := 0; j < len(cat.Fact); j++ {
        r, g, b := rgb(j)
-       fmt.Printf("\033[38;2;%d;%d;%dm%c\033[0m", r, g, b, cat.Fact[j])
+       fmt.Printf(BACKGROUND_COLOR + 
+					  "\033[38;2;%d;%d;%dm%c\033[0m", r, g, b, cat.Fact[j])
    }
 }

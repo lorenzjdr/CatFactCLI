@@ -2,7 +2,7 @@
 
 # Define the Go file and output binary name
 GO_FILE="main.go"
-OUTPUT_BINARY="CatCLI"
+OUTPUT_BINARY="CatFactCLI"
 
 # Build the Go program
 echo -e "Building $GO_FILE...\n"

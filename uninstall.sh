@@ -1,0 +1,1 @@
+rm $GOPATH/bin/CatFactCLI

@@ -18,4 +18,4 @@ Try it ! Run the command below in the terminal
 # Uninstall
 
 To uninstall run  
-```rm $GOPATH/bin/CatFactCLI```
+```./uninstall.sh```
